@@ -1,0 +1,6 @@
+framework module KWAudioUnit {
+  umbrella header "KWAudioUnit.h"
+
+  export *
+  module * { export * }
+}

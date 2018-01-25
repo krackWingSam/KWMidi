@@ -1,0 +1,611 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CAF26F232019A229009C8F91 /* KWAudioUnit.h in Headers */ = {isa = PBXBuildFile; fileRef = CAF26F212019A229009C8F91 /* KWAudioUnit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CAF26F6B2019A248009C8F91 /* FRAudioUnit.h in Headers */ = {isa = PBXBuildFile; fileRef = CAF26F2A2019A247009C8F91 /* FRAudioUnit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CAF26F6C2019A248009C8F91 /* FRAudioUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = CAF26F2B2019A247009C8F91 /* FRAudioUnit.m */; };
+		CAF26F6D2019A248009C8F91 /* FRCompressor.h in Headers */ = {isa = PBXBuildFile; fileRef = CAF26F2C2019A247009C8F91 /* FRCompressor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CAF26F6E2019A248009C8F91 /* FRCompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = CAF26F2D2019A247009C8F91 /* FRCompressor.m */; };
+		CAF26F6F2019A248009C8F91 /* FRConverterUnit.h in Headers */ = {isa = PBXBuildFile; fileRef = CAF26F2E2019A247009C8F91 /* FRConverterUnit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CAF26F702019A248009C8F91 /* FRConverterUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = CAF26F2F2019A247009C8F91 /* FRConverterUnit.m */; };
+		CAF26F712019A248009C8F91 /* FREQUnit.h in Headers */ = {isa = PBXBuildFile; fileRef = CAF26F302019A247009C8F91 /* FREQUnit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CAF26F722019A248009C8F91 /* FREQUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = CAF26F312019A247009C8F91 /* FREQUnit.m */; };
+		CAF26F732019A248009C8F91 /* FRFileUnit.h in Headers */ = {isa = PBXBuildFile; fileRef = CAF26F322019A247009C8F91 /* FRFileUnit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CAF26F742019A248009C8F91 /* FRFileUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = CAF26F332019A247009C8F91 /* FRFileUnit.m */; };
+		CAF26F752019A248009C8F91 /* FRMixerUnit.h in Headers */ = {isa = PBXBuildFile; fileRef = CAF26F342019A247009C8F91 /* FRMixerUnit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CAF26F762019A248009C8F91 /* FRMixerUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = CAF26F352019A247009C8F91 /* FRMixerUnit.m */; };
+		CAF26F772019A248009C8F91 /* FROutputUnit.h in Headers */ = {isa = PBXBuildFile; fileRef = CAF26F362019A247009C8F91 /* FROutputUnit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CAF26F782019A248009C8F91 /* FROutputUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = CAF26F372019A247009C8F91 /* FROutputUnit.m */; };
+		CAF26F792019A248009C8F91 /* FRPeakLimiter.h in Headers */ = {isa = PBXBuildFile; fileRef = CAF26F382019A247009C8F91 /* FRPeakLimiter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CAF26F7A2019A248009C8F91 /* FRPeakLimiter.m in Sources */ = {isa = PBXBuildFile; fileRef = CAF26F392019A247009C8F91 /* FRPeakLimiter.m */; };
+		CAF26F7B2019A248009C8F91 /* FRReverbUnit.h in Headers */ = {isa = PBXBuildFile; fileRef = CAF26F3A2019A247009C8F91 /* FRReverbUnit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CAF26F7C2019A248009C8F91 /* FRReverbUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = CAF26F3B2019A247009C8F91 /* FRReverbUnit.m */; };
+		CAF26F7D2019A248009C8F91 /* FRSamplerUnit.h in Headers */ = {isa = PBXBuildFile; fileRef = CAF26F3C2019A247009C8F91 /* FRSamplerUnit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CAF26F7E2019A248009C8F91 /* FRSamplerUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = CAF26F3D2019A247009C8F91 /* FRSamplerUnit.m */; };
+		CAF26F7F2019A248009C8F91 /* KDBass.aupreset in Resources */ = {isa = PBXBuildFile; fileRef = CAF26F402019A247009C8F91 /* KDBass.aupreset */; };
+		CAF26F802019A248009C8F91 /* KDBass_a2.caf in Resources */ = {isa = PBXBuildFile; fileRef = CAF26F412019A247009C8F91 /* KDBass_a2.caf */; };
+		CAF26F812019A248009C8F91 /* KDBass_c2.caf in Resources */ = {isa = PBXBuildFile; fileRef = CAF26F422019A247009C8F91 /* KDBass_c2.caf */; };
+		CAF26F822019A248009C8F91 /* KDBass_c3.caf in Resources */ = {isa = PBXBuildFile; fileRef = CAF26F432019A247009C8F91 /* KDBass_c3.caf */; };
+		CAF26F832019A248009C8F91 /* KDBass_e1.caf in Resources */ = {isa = PBXBuildFile; fileRef = CAF26F442019A247009C8F91 /* KDBass_e1.caf */; };
+		CAF26F842019A248009C8F91 /* KDBass_f2.caf in Resources */ = {isa = PBXBuildFile; fileRef = CAF26F452019A247009C8F91 /* KDBass_f2.caf */; };
+		CAF26F852019A248009C8F91 /* KDBass_g1.caf in Resources */ = {isa = PBXBuildFile; fileRef = CAF26F462019A247009C8F91 /* KDBass_g1.caf */; };
+		CAF26F862019A248009C8F91 /* drum_hihat.caf in Resources */ = {isa = PBXBuildFile; fileRef = CAF26F482019A247009C8F91 /* drum_hihat.caf */; };
+		CAF26F872019A248009C8F91 /* drum_kick.caf in Resources */ = {isa = PBXBuildFile; fileRef = CAF26F492019A247009C8F91 /* drum_kick.caf */; };
+		CAF26F882019A248009C8F91 /* drum_sim.caf in Resources */ = {isa = PBXBuildFile; fileRef = CAF26F4A2019A247009C8F91 /* drum_sim.caf */; };
+		CAF26F892019A248009C8F91 /* drum_snare1.caf in Resources */ = {isa = PBXBuildFile; fileRef = CAF26F4B2019A247009C8F91 /* drum_snare1.caf */; };
+		CAF26F8A2019A248009C8F91 /* drum_snare2.caf in Resources */ = {isa = PBXBuildFile; fileRef = CAF26F4C2019A247009C8F91 /* drum_snare2.caf */; };
+		CAF26F8B2019A248009C8F91 /* KDDrum.aupreset in Resources */ = {isa = PBXBuildFile; fileRef = CAF26F4D2019A247009C8F91 /* KDDrum.aupreset */; };
+		CAF26F8C2019A248009C8F91 /* 1a#.caf in Resources */ = {isa = PBXBuildFile; fileRef = CAF26F4F2019A247009C8F91 /* 1a#.caf */; };
+		CAF26F8D2019A248009C8F91 /* 2a#.caf in Resources */ = {isa = PBXBuildFile; fileRef = CAF26F502019A247009C8F91 /* 2a#.caf */; };
+		CAF26F8E2019A248009C8F91 /* 3a#.caf in Resources */ = {isa = PBXBuildFile; fileRef = CAF26F512019A247009C8F91 /* 3a#.caf */; };
+		CAF26F8F2019A248009C8F91 /* 4g.caf in Resources */ = {isa = PBXBuildFile; fileRef = CAF26F522019A247009C8F91 /* 4g.caf */; };
+		CAF26F902019A248009C8F91 /* 5e.caf in Resources */ = {isa = PBXBuildFile; fileRef = CAF26F532019A247009C8F91 /* 5e.caf */; };
+		CAF26F912019A248009C8F91 /* KDPiano.aupreset in Resources */ = {isa = PBXBuildFile; fileRef = CAF26F542019A247009C8F91 /* KDPiano.aupreset */; };
+		CAF26F922019A248009C8F91 /* KDString.aupreset in Resources */ = {isa = PBXBuildFile; fileRef = CAF26F562019A247009C8F91 /* KDString.aupreset */; };
+		CAF26F932019A248009C8F91 /* string_c2.caf in Resources */ = {isa = PBXBuildFile; fileRef = CAF26F572019A247009C8F91 /* string_c2.caf */; };
+		CAF26F942019A248009C8F91 /* string_c3.caf in Resources */ = {isa = PBXBuildFile; fileRef = CAF26F582019A247009C8F91 /* string_c3.caf */; };
+		CAF26F952019A248009C8F91 /* string_c4.caf in Resources */ = {isa = PBXBuildFile; fileRef = CAF26F592019A247009C8F91 /* string_c4.caf */; };
+		CAF26F962019A248009C8F91 /* string_g2.caf in Resources */ = {isa = PBXBuildFile; fileRef = CAF26F5A2019A247009C8F91 /* string_g2.caf */; };
+		CAF26F972019A248009C8F91 /* string_g3.caf in Resources */ = {isa = PBXBuildFile; fileRef = CAF26F5B2019A247009C8F91 /* string_g3.caf */; };
+		CAF26F982019A248009C8F91 /* string_g4.caf in Resources */ = {isa = PBXBuildFile; fileRef = CAF26F5C2019A247009C8F91 /* string_g4.caf */; };
+		CAF26F992019A248009C8F91 /* KDTrumpet.aupreset in Resources */ = {isa = PBXBuildFile; fileRef = CAF26F5E2019A247009C8F91 /* KDTrumpet.aupreset */; };
+		CAF26F9A2019A248009C8F91 /* KDTrumpet_b2.caf in Resources */ = {isa = PBXBuildFile; fileRef = CAF26F5F2019A247009C8F91 /* KDTrumpet_b2.caf */; };
+		CAF26F9B2019A248009C8F91 /* KDTrumpet_b3.caf in Resources */ = {isa = PBXBuildFile; fileRef = CAF26F602019A247009C8F91 /* KDTrumpet_b3.caf */; };
+		CAF26F9C2019A248009C8F91 /* KDTrumpet_d3.caf in Resources */ = {isa = PBXBuildFile; fileRef = CAF26F612019A247009C8F91 /* KDTrumpet_d3.caf */; };
+		CAF26F9D2019A248009C8F91 /* KDTrumpet_d4.caf in Resources */ = {isa = PBXBuildFile; fileRef = CAF26F622019A247009C8F91 /* KDTrumpet_d4.caf */; };
+		CAF26F9E2019A248009C8F91 /* KDTrumpet_g3.caf in Resources */ = {isa = PBXBuildFile; fileRef = CAF26F632019A247009C8F91 /* KDTrumpet_g3.caf */; };
+		CAF26F9F2019A248009C8F91 /* KDTrumpet_g4.caf in Resources */ = {isa = PBXBuildFile; fileRef = CAF26F642019A247009C8F91 /* KDTrumpet_g4.caf */; };
+		CAF26FA02019A248009C8F91 /* KDTuba.aupreset in Resources */ = {isa = PBXBuildFile; fileRef = CAF26F662019A247009C8F91 /* KDTuba.aupreset */; };
+		CAF26FA12019A248009C8F91 /* Tuba_c3.caf in Resources */ = {isa = PBXBuildFile; fileRef = CAF26F672019A248009C8F91 /* Tuba_c3.caf */; };
+		CAF26FA22019A248009C8F91 /* Tuba_d2.caf in Resources */ = {isa = PBXBuildFile; fileRef = CAF26F682019A248009C8F91 /* Tuba_d2.caf */; };
+		CAF26FA32019A248009C8F91 /* Tuba_f2.caf in Resources */ = {isa = PBXBuildFile; fileRef = CAF26F692019A248009C8F91 /* Tuba_f2.caf */; };
+		CAF26FA42019A248009C8F91 /* Tuba_g1.caf in Resources */ = {isa = PBXBuildFile; fileRef = CAF26F6A2019A248009C8F91 /* Tuba_g1.caf */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CAF26F1E2019A229009C8F91 /* KWAudioUnit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KWAudioUnit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CAF26F212019A229009C8F91 /* KWAudioUnit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KWAudioUnit.h; sourceTree = "<group>"; };
+		CAF26F222019A229009C8F91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CAF26F2A2019A247009C8F91 /* FRAudioUnit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRAudioUnit.h; sourceTree = "<group>"; };
+		CAF26F2B2019A247009C8F91 /* FRAudioUnit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRAudioUnit.m; sourceTree = "<group>"; };
+		CAF26F2C2019A247009C8F91 /* FRCompressor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRCompressor.h; sourceTree = "<group>"; };
+		CAF26F2D2019A247009C8F91 /* FRCompressor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRCompressor.m; sourceTree = "<group>"; };
+		CAF26F2E2019A247009C8F91 /* FRConverterUnit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRConverterUnit.h; sourceTree = "<group>"; };
+		CAF26F2F2019A247009C8F91 /* FRConverterUnit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRConverterUnit.m; sourceTree = "<group>"; };
+		CAF26F302019A247009C8F91 /* FREQUnit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FREQUnit.h; sourceTree = "<group>"; };
+		CAF26F312019A247009C8F91 /* FREQUnit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FREQUnit.m; sourceTree = "<group>"; };
+		CAF26F322019A247009C8F91 /* FRFileUnit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRFileUnit.h; sourceTree = "<group>"; };
+		CAF26F332019A247009C8F91 /* FRFileUnit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRFileUnit.m; sourceTree = "<group>"; };
+		CAF26F342019A247009C8F91 /* FRMixerUnit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRMixerUnit.h; sourceTree = "<group>"; };
+		CAF26F352019A247009C8F91 /* FRMixerUnit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRMixerUnit.m; sourceTree = "<group>"; };
+		CAF26F362019A247009C8F91 /* FROutputUnit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FROutputUnit.h; sourceTree = "<group>"; };
+		CAF26F372019A247009C8F91 /* FROutputUnit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FROutputUnit.m; sourceTree = "<group>"; };
+		CAF26F382019A247009C8F91 /* FRPeakLimiter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRPeakLimiter.h; sourceTree = "<group>"; };
+		CAF26F392019A247009C8F91 /* FRPeakLimiter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRPeakLimiter.m; sourceTree = "<group>"; };
+		CAF26F3A2019A247009C8F91 /* FRReverbUnit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRReverbUnit.h; sourceTree = "<group>"; };
+		CAF26F3B2019A247009C8F91 /* FRReverbUnit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRReverbUnit.m; sourceTree = "<group>"; };
+		CAF26F3C2019A247009C8F91 /* FRSamplerUnit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRSamplerUnit.h; sourceTree = "<group>"; };
+		CAF26F3D2019A247009C8F91 /* FRSamplerUnit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRSamplerUnit.m; sourceTree = "<group>"; };
+		CAF26F402019A247009C8F91 /* KDBass.aupreset */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = KDBass.aupreset; sourceTree = "<group>"; };
+		CAF26F412019A247009C8F91 /* KDBass_a2.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = KDBass_a2.caf; sourceTree = "<group>"; };
+		CAF26F422019A247009C8F91 /* KDBass_c2.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = KDBass_c2.caf; sourceTree = "<group>"; };
+		CAF26F432019A247009C8F91 /* KDBass_c3.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = KDBass_c3.caf; sourceTree = "<group>"; };
+		CAF26F442019A247009C8F91 /* KDBass_e1.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = KDBass_e1.caf; sourceTree = "<group>"; };
+		CAF26F452019A247009C8F91 /* KDBass_f2.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = KDBass_f2.caf; sourceTree = "<group>"; };
+		CAF26F462019A247009C8F91 /* KDBass_g1.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = KDBass_g1.caf; sourceTree = "<group>"; };
+		CAF26F482019A247009C8F91 /* drum_hihat.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = drum_hihat.caf; sourceTree = "<group>"; };
+		CAF26F492019A247009C8F91 /* drum_kick.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = drum_kick.caf; sourceTree = "<group>"; };
+		CAF26F4A2019A247009C8F91 /* drum_sim.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = drum_sim.caf; sourceTree = "<group>"; };
+		CAF26F4B2019A247009C8F91 /* drum_snare1.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = drum_snare1.caf; sourceTree = "<group>"; };
+		CAF26F4C2019A247009C8F91 /* drum_snare2.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = drum_snare2.caf; sourceTree = "<group>"; };
+		CAF26F4D2019A247009C8F91 /* KDDrum.aupreset */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = KDDrum.aupreset; sourceTree = "<group>"; };
+		CAF26F4F2019A247009C8F91 /* 1a#.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "1a#.caf"; sourceTree = "<group>"; };
+		CAF26F502019A247009C8F91 /* 2a#.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "2a#.caf"; sourceTree = "<group>"; };
+		CAF26F512019A247009C8F91 /* 3a#.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "3a#.caf"; sourceTree = "<group>"; };
+		CAF26F522019A247009C8F91 /* 4g.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = 4g.caf; sourceTree = "<group>"; };
+		CAF26F532019A247009C8F91 /* 5e.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = 5e.caf; sourceTree = "<group>"; };
+		CAF26F542019A247009C8F91 /* KDPiano.aupreset */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = KDPiano.aupreset; sourceTree = "<group>"; };
+		CAF26F562019A247009C8F91 /* KDString.aupreset */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = KDString.aupreset; sourceTree = "<group>"; };
+		CAF26F572019A247009C8F91 /* string_c2.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = string_c2.caf; sourceTree = "<group>"; };
+		CAF26F582019A247009C8F91 /* string_c3.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = string_c3.caf; sourceTree = "<group>"; };
+		CAF26F592019A247009C8F91 /* string_c4.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = string_c4.caf; sourceTree = "<group>"; };
+		CAF26F5A2019A247009C8F91 /* string_g2.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = string_g2.caf; sourceTree = "<group>"; };
+		CAF26F5B2019A247009C8F91 /* string_g3.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = string_g3.caf; sourceTree = "<group>"; };
+		CAF26F5C2019A247009C8F91 /* string_g4.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = string_g4.caf; sourceTree = "<group>"; };
+		CAF26F5E2019A247009C8F91 /* KDTrumpet.aupreset */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = KDTrumpet.aupreset; sourceTree = "<group>"; };
+		CAF26F5F2019A247009C8F91 /* KDTrumpet_b2.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = KDTrumpet_b2.caf; sourceTree = "<group>"; };
+		CAF26F602019A247009C8F91 /* KDTrumpet_b3.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = KDTrumpet_b3.caf; sourceTree = "<group>"; };
+		CAF26F612019A247009C8F91 /* KDTrumpet_d3.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = KDTrumpet_d3.caf; sourceTree = "<group>"; };
+		CAF26F622019A247009C8F91 /* KDTrumpet_d4.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = KDTrumpet_d4.caf; sourceTree = "<group>"; };
+		CAF26F632019A247009C8F91 /* KDTrumpet_g3.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = KDTrumpet_g3.caf; sourceTree = "<group>"; };
+		CAF26F642019A247009C8F91 /* KDTrumpet_g4.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = KDTrumpet_g4.caf; sourceTree = "<group>"; };
+		CAF26F662019A247009C8F91 /* KDTuba.aupreset */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = KDTuba.aupreset; sourceTree = "<group>"; };
+		CAF26F672019A248009C8F91 /* Tuba_c3.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Tuba_c3.caf; sourceTree = "<group>"; };
+		CAF26F682019A248009C8F91 /* Tuba_d2.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Tuba_d2.caf; sourceTree = "<group>"; };
+		CAF26F692019A248009C8F91 /* Tuba_f2.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Tuba_f2.caf; sourceTree = "<group>"; };
+		CAF26F6A2019A248009C8F91 /* Tuba_g1.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Tuba_g1.caf; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CAF26F1A2019A229009C8F91 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CAF26F142019A229009C8F91 = {
+			isa = PBXGroup;
+			children = (
+				CAF26F202019A229009C8F91 /* KWAudioUnit */,
+				CAF26F1F2019A229009C8F91 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CAF26F1F2019A229009C8F91 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CAF26F1E2019A229009C8F91 /* KWAudioUnit.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CAF26F202019A229009C8F91 /* KWAudioUnit */ = {
+			isa = PBXGroup;
+			children = (
+				CAF26F292019A247009C8F91 /* FRAudioUnit */,
+				CAF26F212019A229009C8F91 /* KWAudioUnit.h */,
+				CAF26F222019A229009C8F91 /* Info.plist */,
+			);
+			path = KWAudioUnit;
+			sourceTree = "<group>";
+		};
+		CAF26F292019A247009C8F91 /* FRAudioUnit */ = {
+			isa = PBXGroup;
+			children = (
+				CAF26F2A2019A247009C8F91 /* FRAudioUnit.h */,
+				CAF26F2B2019A247009C8F91 /* FRAudioUnit.m */,
+				CAF26F2C2019A247009C8F91 /* FRCompressor.h */,
+				CAF26F2D2019A247009C8F91 /* FRCompressor.m */,
+				CAF26F2E2019A247009C8F91 /* FRConverterUnit.h */,
+				CAF26F2F2019A247009C8F91 /* FRConverterUnit.m */,
+				CAF26F302019A247009C8F91 /* FREQUnit.h */,
+				CAF26F312019A247009C8F91 /* FREQUnit.m */,
+				CAF26F322019A247009C8F91 /* FRFileUnit.h */,
+				CAF26F332019A247009C8F91 /* FRFileUnit.m */,
+				CAF26F342019A247009C8F91 /* FRMixerUnit.h */,
+				CAF26F352019A247009C8F91 /* FRMixerUnit.m */,
+				CAF26F362019A247009C8F91 /* FROutputUnit.h */,
+				CAF26F372019A247009C8F91 /* FROutputUnit.m */,
+				CAF26F382019A247009C8F91 /* FRPeakLimiter.h */,
+				CAF26F392019A247009C8F91 /* FRPeakLimiter.m */,
+				CAF26F3A2019A247009C8F91 /* FRReverbUnit.h */,
+				CAF26F3B2019A247009C8F91 /* FRReverbUnit.m */,
+				CAF26F3C2019A247009C8F91 /* FRSamplerUnit.h */,
+				CAF26F3D2019A247009C8F91 /* FRSamplerUnit.m */,
+				CAF26F3E2019A247009C8F91 /* Presset */,
+			);
+			path = FRAudioUnit;
+			sourceTree = "<group>";
+		};
+		CAF26F3E2019A247009C8F91 /* Presset */ = {
+			isa = PBXGroup;
+			children = (
+				CAF26F3F2019A247009C8F91 /* KDBass */,
+				CAF26F472019A247009C8F91 /* KDDrum */,
+				CAF26F4E2019A247009C8F91 /* KDPiano */,
+				CAF26F552019A247009C8F91 /* KDString */,
+				CAF26F5D2019A247009C8F91 /* KDTrumpet */,
+				CAF26F652019A247009C8F91 /* KDTuba */,
+			);
+			path = Presset;
+			sourceTree = "<group>";
+		};
+		CAF26F3F2019A247009C8F91 /* KDBass */ = {
+			isa = PBXGroup;
+			children = (
+				CAF26F402019A247009C8F91 /* KDBass.aupreset */,
+				CAF26F412019A247009C8F91 /* KDBass_a2.caf */,
+				CAF26F422019A247009C8F91 /* KDBass_c2.caf */,
+				CAF26F432019A247009C8F91 /* KDBass_c3.caf */,
+				CAF26F442019A247009C8F91 /* KDBass_e1.caf */,
+				CAF26F452019A247009C8F91 /* KDBass_f2.caf */,
+				CAF26F462019A247009C8F91 /* KDBass_g1.caf */,
+			);
+			path = KDBass;
+			sourceTree = "<group>";
+		};
+		CAF26F472019A247009C8F91 /* KDDrum */ = {
+			isa = PBXGroup;
+			children = (
+				CAF26F482019A247009C8F91 /* drum_hihat.caf */,
+				CAF26F492019A247009C8F91 /* drum_kick.caf */,
+				CAF26F4A2019A247009C8F91 /* drum_sim.caf */,
+				CAF26F4B2019A247009C8F91 /* drum_snare1.caf */,
+				CAF26F4C2019A247009C8F91 /* drum_snare2.caf */,
+				CAF26F4D2019A247009C8F91 /* KDDrum.aupreset */,
+			);
+			path = KDDrum;
+			sourceTree = "<group>";
+		};
+		CAF26F4E2019A247009C8F91 /* KDPiano */ = {
+			isa = PBXGroup;
+			children = (
+				CAF26F4F2019A247009C8F91 /* 1a#.caf */,
+				CAF26F502019A247009C8F91 /* 2a#.caf */,
+				CAF26F512019A247009C8F91 /* 3a#.caf */,
+				CAF26F522019A247009C8F91 /* 4g.caf */,
+				CAF26F532019A247009C8F91 /* 5e.caf */,
+				CAF26F542019A247009C8F91 /* KDPiano.aupreset */,
+			);
+			path = KDPiano;
+			sourceTree = "<group>";
+		};
+		CAF26F552019A247009C8F91 /* KDString */ = {
+			isa = PBXGroup;
+			children = (
+				CAF26F562019A247009C8F91 /* KDString.aupreset */,
+				CAF26F572019A247009C8F91 /* string_c2.caf */,
+				CAF26F582019A247009C8F91 /* string_c3.caf */,
+				CAF26F592019A247009C8F91 /* string_c4.caf */,
+				CAF26F5A2019A247009C8F91 /* string_g2.caf */,
+				CAF26F5B2019A247009C8F91 /* string_g3.caf */,
+				CAF26F5C2019A247009C8F91 /* string_g4.caf */,
+			);
+			path = KDString;
+			sourceTree = "<group>";
+		};
+		CAF26F5D2019A247009C8F91 /* KDTrumpet */ = {
+			isa = PBXGroup;
+			children = (
+				CAF26F5E2019A247009C8F91 /* KDTrumpet.aupreset */,
+				CAF26F5F2019A247009C8F91 /* KDTrumpet_b2.caf */,
+				CAF26F602019A247009C8F91 /* KDTrumpet_b3.caf */,
+				CAF26F612019A247009C8F91 /* KDTrumpet_d3.caf */,
+				CAF26F622019A247009C8F91 /* KDTrumpet_d4.caf */,
+				CAF26F632019A247009C8F91 /* KDTrumpet_g3.caf */,
+				CAF26F642019A247009C8F91 /* KDTrumpet_g4.caf */,
+			);
+			path = KDTrumpet;
+			sourceTree = "<group>";
+		};
+		CAF26F652019A247009C8F91 /* KDTuba */ = {
+			isa = PBXGroup;
+			children = (
+				CAF26F662019A247009C8F91 /* KDTuba.aupreset */,
+				CAF26F672019A248009C8F91 /* Tuba_c3.caf */,
+				CAF26F682019A248009C8F91 /* Tuba_d2.caf */,
+				CAF26F692019A248009C8F91 /* Tuba_f2.caf */,
+				CAF26F6A2019A248009C8F91 /* Tuba_g1.caf */,
+			);
+			path = KDTuba;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		CAF26F1B2019A229009C8F91 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAF26F792019A248009C8F91 /* FRPeakLimiter.h in Headers */,
+				CAF26F732019A248009C8F91 /* FRFileUnit.h in Headers */,
+				CAF26F752019A248009C8F91 /* FRMixerUnit.h in Headers */,
+				CAF26F232019A229009C8F91 /* KWAudioUnit.h in Headers */,
+				CAF26F6B2019A248009C8F91 /* FRAudioUnit.h in Headers */,
+				CAF26F6D2019A248009C8F91 /* FRCompressor.h in Headers */,
+				CAF26F7B2019A248009C8F91 /* FRReverbUnit.h in Headers */,
+				CAF26F772019A248009C8F91 /* FROutputUnit.h in Headers */,
+				CAF26F7D2019A248009C8F91 /* FRSamplerUnit.h in Headers */,
+				CAF26F6F2019A248009C8F91 /* FRConverterUnit.h in Headers */,
+				CAF26F712019A248009C8F91 /* FREQUnit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		CAF26F1D2019A229009C8F91 /* KWAudioUnit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CAF26F262019A229009C8F91 /* Build configuration list for PBXNativeTarget "KWAudioUnit" */;
+			buildPhases = (
+				CAF26F192019A229009C8F91 /* Sources */,
+				CAF26F1A2019A229009C8F91 /* Frameworks */,
+				CAF26F1B2019A229009C8F91 /* Headers */,
+				CAF26F1C2019A229009C8F91 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KWAudioUnit;
+			productName = KWAudioUnit;
+			productReference = CAF26F1E2019A229009C8F91 /* KWAudioUnit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CAF26F152019A229009C8F91 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = Fermata;
+				TargetAttributes = {
+					CAF26F1D2019A229009C8F91 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = CAF26F182019A229009C8F91 /* Build configuration list for PBXProject "KWAudioUnit" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CAF26F142019A229009C8F91;
+			productRefGroup = CAF26F1F2019A229009C8F91 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CAF26F1D2019A229009C8F91 /* KWAudioUnit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CAF26F1C2019A229009C8F91 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAF26F842019A248009C8F91 /* KDBass_f2.caf in Resources */,
+				CAF26F9E2019A248009C8F91 /* KDTrumpet_g3.caf in Resources */,
+				CAF26F812019A248009C8F91 /* KDBass_c2.caf in Resources */,
+				CAF26FA12019A248009C8F91 /* Tuba_c3.caf in Resources */,
+				CAF26F8C2019A248009C8F91 /* 1a#.caf in Resources */,
+				CAF26F7F2019A248009C8F91 /* KDBass.aupreset in Resources */,
+				CAF26F9C2019A248009C8F91 /* KDTrumpet_d3.caf in Resources */,
+				CAF26F8B2019A248009C8F91 /* KDDrum.aupreset in Resources */,
+				CAF26F932019A248009C8F91 /* string_c2.caf in Resources */,
+				CAF26F862019A248009C8F91 /* drum_hihat.caf in Resources */,
+				CAF26F8E2019A248009C8F91 /* 3a#.caf in Resources */,
+				CAF26FA32019A248009C8F91 /* Tuba_f2.caf in Resources */,
+				CAF26F8D2019A248009C8F91 /* 2a#.caf in Resources */,
+				CAF26F912019A248009C8F91 /* KDPiano.aupreset in Resources */,
+				CAF26FA42019A248009C8F91 /* Tuba_g1.caf in Resources */,
+				CAF26F982019A248009C8F91 /* string_g4.caf in Resources */,
+				CAF26F972019A248009C8F91 /* string_g3.caf in Resources */,
+				CAF26F822019A248009C8F91 /* KDBass_c3.caf in Resources */,
+				CAF26F922019A248009C8F91 /* KDString.aupreset in Resources */,
+				CAF26F852019A248009C8F91 /* KDBass_g1.caf in Resources */,
+				CAF26F9B2019A248009C8F91 /* KDTrumpet_b3.caf in Resources */,
+				CAF26F9A2019A248009C8F91 /* KDTrumpet_b2.caf in Resources */,
+				CAF26FA22019A248009C8F91 /* Tuba_d2.caf in Resources */,
+				CAF26F942019A248009C8F91 /* string_c3.caf in Resources */,
+				CAF26F882019A248009C8F91 /* drum_sim.caf in Resources */,
+				CAF26F802019A248009C8F91 /* KDBass_a2.caf in Resources */,
+				CAF26F892019A248009C8F91 /* drum_snare1.caf in Resources */,
+				CAF26F8A2019A248009C8F91 /* drum_snare2.caf in Resources */,
+				CAF26F952019A248009C8F91 /* string_c4.caf in Resources */,
+				CAF26F902019A248009C8F91 /* 5e.caf in Resources */,
+				CAF26F962019A248009C8F91 /* string_g2.caf in Resources */,
+				CAF26F9D2019A248009C8F91 /* KDTrumpet_d4.caf in Resources */,
+				CAF26F992019A248009C8F91 /* KDTrumpet.aupreset in Resources */,
+				CAF26FA02019A248009C8F91 /* KDTuba.aupreset in Resources */,
+				CAF26F832019A248009C8F91 /* KDBass_e1.caf in Resources */,
+				CAF26F872019A248009C8F91 /* drum_kick.caf in Resources */,
+				CAF26F9F2019A248009C8F91 /* KDTrumpet_g4.caf in Resources */,
+				CAF26F8F2019A248009C8F91 /* 4g.caf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CAF26F192019A229009C8F91 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAF26F6E2019A248009C8F91 /* FRCompressor.m in Sources */,
+				CAF26F7A2019A248009C8F91 /* FRPeakLimiter.m in Sources */,
+				CAF26F7E2019A248009C8F91 /* FRSamplerUnit.m in Sources */,
+				CAF26F7C2019A248009C8F91 /* FRReverbUnit.m in Sources */,
+				CAF26F6C2019A248009C8F91 /* FRAudioUnit.m in Sources */,
+				CAF26F702019A248009C8F91 /* FRConverterUnit.m in Sources */,
+				CAF26F782019A248009C8F91 /* FROutputUnit.m in Sources */,
+				CAF26F722019A248009C8F91 /* FREQUnit.m in Sources */,
+				CAF26F742019A248009C8F91 /* FRFileUnit.m in Sources */,
+				CAF26F762019A248009C8F91 /* FRMixerUnit.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		CAF26F242019A229009C8F91 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CAF26F252019A229009C8F91 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CAF26F272019A229009C8F91 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = HXU23UYV46;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = KWAudioUnit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Fermata.dev.KWAudioUnit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		CAF26F282019A229009C8F91 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = HXU23UYV46;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = KWAudioUnit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Fermata.dev.KWAudioUnit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CAF26F182019A229009C8F91 /* Build configuration list for PBXProject "KWAudioUnit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CAF26F242019A229009C8F91 /* Debug */,
+				CAF26F252019A229009C8F91 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CAF26F262019A229009C8F91 /* Build configuration list for PBXNativeTarget "KWAudioUnit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CAF26F272019A229009C8F91 /* Debug */,
+				CAF26F282019A229009C8F91 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CAF26F152019A229009C8F91 /* Project object */;
+}
