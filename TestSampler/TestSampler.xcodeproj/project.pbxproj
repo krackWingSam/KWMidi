@@ -53,6 +53,7 @@
 		CAF270022019A50F009C8F91 /* Tuba_g1.caf in Resources */ = {isa = PBXBuildFile; fileRef = CAF26FDC2019A50F009C8F91 /* Tuba_g1.caf */; };
 		CAF270042019AAED009C8F91 /* KWAudioUnit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAF270032019AAED009C8F91 /* KWAudioUnit.framework */; };
 		CAF270062019AB57009C8F91 /* KWAudioUnit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CAF270032019AAED009C8F91 /* KWAudioUnit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CAF2700A2019C890009C8F91 /* FRMidiDeviceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CAF270092019C890009C8F91 /* FRMidiDeviceManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -122,6 +123,8 @@
 		CAF26FDB2019A50F009C8F91 /* Tuba_f2.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Tuba_f2.caf; sourceTree = "<group>"; };
 		CAF26FDC2019A50F009C8F91 /* Tuba_g1.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Tuba_g1.caf; sourceTree = "<group>"; };
 		CAF270032019AAED009C8F91 /* KWAudioUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = KWAudioUnit.framework; sourceTree = "<group>"; };
+		CAF270082019C890009C8F91 /* FRMidiDeviceManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FRMidiDeviceManager.h; sourceTree = "<group>"; };
+		CAF270092019C890009C8F91 /* FRMidiDeviceManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FRMidiDeviceManager.m; sourceTree = "<group>"; };
 		D0FC7D8E902F935AD18EE24D /* Pods-TestSampler.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestSampler.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestSampler/Pods-TestSampler.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -192,6 +195,7 @@
 		CAF26DF120170622009C8F91 /* Objects */ = {
 			isa = PBXGroup;
 			children = (
+				CAF270072019C86C009C8F91 /* MidiDevice */,
 				CAF26DF220170622009C8F91 /* AudioController */,
 			);
 			path = Objects;
@@ -314,6 +318,15 @@
 				CAF26FDC2019A50F009C8F91 /* Tuba_g1.caf */,
 			);
 			path = KDTuba;
+			sourceTree = "<group>";
+		};
+		CAF270072019C86C009C8F91 /* MidiDevice */ = {
+			isa = PBXGroup;
+			children = (
+				CAF270082019C890009C8F91 /* FRMidiDeviceManager.h */,
+				CAF270092019C890009C8F91 /* FRMidiDeviceManager.m */,
+			);
+			path = MidiDevice;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -480,6 +493,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CAF26E7A20180B1C009C8F91 /* AudioController.m in Sources */,
+				CAF2700A2019C890009C8F91 /* FRMidiDeviceManager.m in Sources */,
 				CA629C242011863F00502D22 /* ViewController.m in Sources */,
 				CA629C2C2011863F00502D22 /* main.m in Sources */,
 				CA629C212011863F00502D22 /* AppDelegate.m in Sources */,

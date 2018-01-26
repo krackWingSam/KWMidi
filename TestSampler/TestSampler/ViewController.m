@@ -9,6 +9,7 @@
 #import "ViewController.h"
 
 #import "AudioController.h"
+#import "FRMidiDeviceManager.h"
 
 @interface ViewController () {
     IBOutlet NSTextField *tf_Note;
@@ -26,6 +27,8 @@
 
     // Do any additional setup after loading the view.
     
+    [self testMidiDevices];
+    
     ac = [[AudioController alloc] init];
     [ac initDefaultAudioUnits];
 }
@@ -37,7 +40,12 @@
     // Update the view, if already loaded.
 }
 
+-(void)testMidiDevices {
+    [FRMidiDeviceManager getMidiDevices];
+}
 
+
+#pragma - mark IBActions
 -(IBAction)action_MidiTest:(id)sender {
     [ac testMidiOn];
 }
