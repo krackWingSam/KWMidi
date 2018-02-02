@@ -56,4 +56,9 @@
     [samplerUnit offMidiSignal:noteNumber withVelocity:velocity];
 }
 
+
+-(FRSamplerUnit *)getSamplerUnit {
+    return samplerUnit;
+}
+
 @end

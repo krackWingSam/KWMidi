@@ -53,7 +53,9 @@
 		CAF270022019A50F009C8F91 /* Tuba_g1.caf in Resources */ = {isa = PBXBuildFile; fileRef = CAF26FDC2019A50F009C8F91 /* Tuba_g1.caf */; };
 		CAF270042019AAED009C8F91 /* KWAudioUnit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAF270032019AAED009C8F91 /* KWAudioUnit.framework */; };
 		CAF270062019AB57009C8F91 /* KWAudioUnit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CAF270032019AAED009C8F91 /* KWAudioUnit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		CAF2700A2019C890009C8F91 /* FRMidiDeviceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CAF270092019C890009C8F91 /* FRMidiDeviceManager.m */; };
+		CAF2700A2019C890009C8F91 /* KWMidiDeviceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CAF270092019C890009C8F91 /* KWMidiDeviceManager.m */; };
+		CAF2700D201AF143009C8F91 /* KWMidiDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = CAF2700C201AF143009C8F91 /* KWMidiDevice.m */; };
+		CAF27010201B19A0009C8F91 /* MidiDeviceController.m in Sources */ = {isa = PBXBuildFile; fileRef = CAF2700F201B19A0009C8F91 /* MidiDeviceController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -123,8 +125,12 @@
 		CAF26FDB2019A50F009C8F91 /* Tuba_f2.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Tuba_f2.caf; sourceTree = "<group>"; };
 		CAF26FDC2019A50F009C8F91 /* Tuba_g1.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Tuba_g1.caf; sourceTree = "<group>"; };
 		CAF270032019AAED009C8F91 /* KWAudioUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = KWAudioUnit.framework; sourceTree = "<group>"; };
-		CAF270082019C890009C8F91 /* FRMidiDeviceManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FRMidiDeviceManager.h; sourceTree = "<group>"; };
-		CAF270092019C890009C8F91 /* FRMidiDeviceManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FRMidiDeviceManager.m; sourceTree = "<group>"; };
+		CAF270082019C890009C8F91 /* KWMidiDeviceManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KWMidiDeviceManager.h; sourceTree = "<group>"; };
+		CAF270092019C890009C8F91 /* KWMidiDeviceManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KWMidiDeviceManager.m; sourceTree = "<group>"; };
+		CAF2700B201AF143009C8F91 /* KWMidiDevice.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KWMidiDevice.h; sourceTree = "<group>"; };
+		CAF2700C201AF143009C8F91 /* KWMidiDevice.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KWMidiDevice.m; sourceTree = "<group>"; };
+		CAF2700E201B19A0009C8F91 /* MidiDeviceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MidiDeviceController.h; sourceTree = "<group>"; };
+		CAF2700F201B19A0009C8F91 /* MidiDeviceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MidiDeviceController.m; sourceTree = "<group>"; };
 		D0FC7D8E902F935AD18EE24D /* Pods-TestSampler.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestSampler.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestSampler/Pods-TestSampler.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -323,8 +329,12 @@
 		CAF270072019C86C009C8F91 /* MidiDevice */ = {
 			isa = PBXGroup;
 			children = (
-				CAF270082019C890009C8F91 /* FRMidiDeviceManager.h */,
-				CAF270092019C890009C8F91 /* FRMidiDeviceManager.m */,
+				CAF270082019C890009C8F91 /* KWMidiDeviceManager.h */,
+				CAF270092019C890009C8F91 /* KWMidiDeviceManager.m */,
+				CAF2700B201AF143009C8F91 /* KWMidiDevice.h */,
+				CAF2700C201AF143009C8F91 /* KWMidiDevice.m */,
+				CAF2700E201B19A0009C8F91 /* MidiDeviceController.h */,
+				CAF2700F201B19A0009C8F91 /* MidiDeviceController.m */,
 			);
 			path = MidiDevice;
 			sourceTree = "<group>";
@@ -492,8 +502,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CAF2700D201AF143009C8F91 /* KWMidiDevice.m in Sources */,
 				CAF26E7A20180B1C009C8F91 /* AudioController.m in Sources */,
-				CAF2700A2019C890009C8F91 /* FRMidiDeviceManager.m in Sources */,
+				CAF27010201B19A0009C8F91 /* MidiDeviceController.m in Sources */,
+				CAF2700A2019C890009C8F91 /* KWMidiDeviceManager.m in Sources */,
 				CA629C242011863F00502D22 /* ViewController.m in Sources */,
 				CA629C2C2011863F00502D22 /* main.m in Sources */,
 				CA629C212011863F00502D22 /* AppDelegate.m in Sources */,

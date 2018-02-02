@@ -19,4 +19,6 @@
 -(void)sendMidiOnWithNoteNumber:(UInt32)noteNumber withVelocity:(UInt32)velocity;
 -(void)sendMidiOffWithNoteNumber:(UInt32)noteNumber withVelocity:(UInt32)velocity;
 
+-(FRSamplerUnit *)getSamplerUnit;
+
 @end

@@ -9,13 +9,14 @@
 #import "ViewController.h"
 
 #import "AudioController.h"
-#import "FRMidiDeviceManager.h"
+#import "MidiDeviceController.h"
 
 @interface ViewController () {
     IBOutlet NSTextField *tf_Note;
     IBOutlet NSTextField *tf_Velocity;
     
     AudioController *ac;
+    FRSamplerUnit *samplerUnit;
 }
 
 @end
@@ -27,10 +28,11 @@
 
     // Do any additional setup after loading the view.
     
-    [self testMidiDevices];
-    
     ac = [[AudioController alloc] init];
     [ac initDefaultAudioUnits];
+    samplerUnit = [ac getSamplerUnit];
+    
+    [self testMidiDevices];
 }
 
 
@@ -41,7 +43,7 @@
 }
 
 -(void)testMidiDevices {
-    [FRMidiDeviceManager getMidiDevices];
+    [MidiDeviceController getFirstDeviceWithCallback:midiInputCallback withSamplerUnit:samplerUnit];
 }
 
 
@@ -62,6 +64,21 @@
     UInt32 velocity = (UInt32)[[NSNumber numberWithInt:[tf_Velocity.stringValue intValue]] intValue];
     
     [ac sendMidiOffWithNoteNumber:note withVelocity:velocity];
+}
+
+
+
+#pragma - mark callback
+static void midiInputCallback (const MIDIPacketList *list, void *procRef, void *srcRef) {
+    for (int i=0 ; i<list->numPackets ; i++) {
+        MIDIPacket packet = list->packet[i];
+        
+        NSLog(@"prog : %d \t noteNumber : %d \t velocity : %d", packet.data[0], packet.data[1], packet.data[2]);
+        
+        if (packet.data[0] == 159)
+            [(__bridge FRSamplerUnit *)procRef onMidiSignal:packet.data[1] withVelocity:packet.data[2]];
+        else if (packet.data[0] == 191);
+    }
 }
 
 
