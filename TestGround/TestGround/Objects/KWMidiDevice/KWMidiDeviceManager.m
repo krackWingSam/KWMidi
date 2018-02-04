@@ -47,8 +47,7 @@
 
 +(KWMidiDevice *)getMidiDeviceWithDeviceDictionary:(NSDictionary *)dic {
     //TODO: Make Device and return
-    KWMidiDevice *device = [[KWMidiDevice alloc] init];
-    
+    KWMidiDevice *device = [[KWMidiDevice alloc] initWithDictionary:dic];
     
     return nil;
 }

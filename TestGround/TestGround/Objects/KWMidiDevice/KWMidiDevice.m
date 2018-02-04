@@ -38,9 +38,10 @@
     return self;
 }
 
--(id)initWithDictionary:(NSDictionary *)dic withCallback:(void *)callback {
+-(id)initWithDictionary:(NSDictionary *)dic withCallback:(void *)callback withProcRef:(void *)procRef {
     if (self = [[KWMidiDevice alloc] initWithDictionary:dic]) {
         [self setCallback:callback];
+        [self setProcRef:procRef];
         [self setupMidiDevice];
     }
     return self;
@@ -76,7 +77,7 @@
 -(OSStatus)setupMidiDevice {
     OSStatus result;
     MIDIPortRef inputPort;
-    result = MIDIInputPortCreate(_midiClient, CFSTR("Input"), _callback, (__bridge void * _Nullable)self, &inputPort);
+    result = MIDIInputPortCreate(_midiClient, CFSTR("Input"), _callback, _procRef, &inputPort);
     if (result)
         return result;
     
