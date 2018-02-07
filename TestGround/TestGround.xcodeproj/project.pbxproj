@@ -63,6 +63,9 @@
 		CA46CBB02026DF6B002D5A1A /* Tuba_d2.caf in Resources */ = {isa = PBXBuildFile; fileRef = CA46CB8A2026DF6B002D5A1A /* Tuba_d2.caf */; };
 		CA46CBB12026DF6B002D5A1A /* Tuba_f2.caf in Resources */ = {isa = PBXBuildFile; fileRef = CA46CB8B2026DF6B002D5A1A /* Tuba_f2.caf */; };
 		CA46CBB22026DF6B002D5A1A /* Tuba_g1.caf in Resources */ = {isa = PBXBuildFile; fileRef = CA46CB8C2026DF6B002D5A1A /* Tuba_g1.caf */; };
+		CA46CBB52026E58F002D5A1A /* DeviceInformationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA46CBB42026E58F002D5A1A /* DeviceInformationViewController.m */; };
+		CA46CBB82026EA07002D5A1A /* AddChannelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA46CBB72026EA07002D5A1A /* AddChannelViewController.m */; };
+		CA46CBBB2026EA4A002D5A1A /* KWAudioUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = CA46CBBA2026EA4A002D5A1A /* KWAudioUtility.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -141,6 +144,12 @@
 		CA46CB8A2026DF6B002D5A1A /* Tuba_d2.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Tuba_d2.caf; sourceTree = "<group>"; };
 		CA46CB8B2026DF6B002D5A1A /* Tuba_f2.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Tuba_f2.caf; sourceTree = "<group>"; };
 		CA46CB8C2026DF6B002D5A1A /* Tuba_g1.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Tuba_g1.caf; sourceTree = "<group>"; };
+		CA46CBB32026E58F002D5A1A /* DeviceInformationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeviceInformationViewController.h; sourceTree = "<group>"; };
+		CA46CBB42026E58F002D5A1A /* DeviceInformationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeviceInformationViewController.m; sourceTree = "<group>"; };
+		CA46CBB62026EA07002D5A1A /* AddChannelViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddChannelViewController.h; sourceTree = "<group>"; };
+		CA46CBB72026EA07002D5A1A /* AddChannelViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddChannelViewController.m; sourceTree = "<group>"; };
+		CA46CBB92026EA4A002D5A1A /* KWAudioUtility.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KWAudioUtility.h; sourceTree = "<group>"; };
+		CA46CBBA2026EA4A002D5A1A /* KWAudioUtility.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KWAudioUtility.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -200,6 +209,8 @@
 			isa = PBXGroup;
 			children = (
 				CA46CB5E2026DDF2002D5A1A /* KWAudio.h */,
+				CA46CBB92026EA4A002D5A1A /* KWAudioUtility.h */,
+				CA46CBBA2026EA4A002D5A1A /* KWAudioUtility.m */,
 				CA46CB302026A9BE002D5A1A /* KWAudioUnits */,
 			);
 			path = KWAudio;
@@ -250,6 +261,10 @@
 			children = (
 				CA46CB5B2026DD87002D5A1A /* TestGroundViewController.h */,
 				CA46CB5C2026DD87002D5A1A /* TestGroundViewController.m */,
+				CA46CBB32026E58F002D5A1A /* DeviceInformationViewController.h */,
+				CA46CBB42026E58F002D5A1A /* DeviceInformationViewController.m */,
+				CA46CBB62026EA07002D5A1A /* AddChannelViewController.h */,
+				CA46CBB72026EA07002D5A1A /* AddChannelViewController.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -464,14 +479,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				CA46CB512026A9BE002D5A1A /* KWMixerUnit.m in Sources */,
+				CA46CBBB2026EA4A002D5A1A /* KWAudioUtility.m in Sources */,
 				CA46CB572026A9BE002D5A1A /* KWMidiDeviceManager.m in Sources */,
 				CA46CB542026A9BE002D5A1A /* KWReverbUnit.m in Sources */,
 				CA46CB5D2026DD87002D5A1A /* TestGroundViewController.m in Sources */,
 				CA46CB4C2026A9BE002D5A1A /* KWAudioUnit.m in Sources */,
+				CA46CBB52026E58F002D5A1A /* DeviceInformationViewController.m in Sources */,
 				CA46CB502026A9BE002D5A1A /* KWFileUnit.m in Sources */,
 				CA46CB532026A9BE002D5A1A /* KWPeakLimiter.m in Sources */,
 				CA46CB4D2026A9BE002D5A1A /* KWCompressor.m in Sources */,
 				CA46CB582026A9BE002D5A1A /* MidiDeviceController.m in Sources */,
+				CA46CBB82026EA07002D5A1A /* AddChannelViewController.m in Sources */,
 				CA46CB182026A8CC002D5A1A /* main.m in Sources */,
 				CA46CB562026A9BE002D5A1A /* KWMidiDevice.m in Sources */,
 				CA46CB4F2026A9BE002D5A1A /* KWEQUnit.m in Sources */,

@@ -9,6 +9,8 @@
 #ifndef KWAudio_h
 #define KWAudio_h
 
+#import "KWAudioUtility.h"
+
 #import "KWCompressor.h"
 #import "KWConverterUnit.h"
 #import "KWEQUnit.h"
