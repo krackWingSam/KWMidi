@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bbE-yG-kmH">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Testing_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YDi-3o-f6J">
+                                <rect key="frame" x="30" y="128" width="354" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="1OO-aU-EKn"/>
+                                </constraints>
+                                <state key="normal" title="Test Sampler"/>
+                                <connections>
+                                    <segue destination="Ueh-7E-30R" kind="show" id="H5R-2Q-P8z"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ceo-lN-eYc">
+                                <rect key="frame" x="30" y="198" width="354" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="nPe-1f-X3r"/>
+                                </constraints>
+                                <state key="normal" title="Test Reverb"/>
+                                <connections>
+                                    <segue destination="h1W-1u-jkI" kind="show" id="0Tm-Xz-kuT"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="YDi-3o-f6J" secondAttribute="trailing" constant="30" id="1Dp-FS-9xr"/>
+                            <constraint firstItem="YDi-3o-f6J" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="3lA-Ss-nvZ"/>
+                            <constraint firstItem="ceo-lN-eYc" firstAttribute="top" secondItem="YDi-3o-f6J" secondAttribute="bottom" constant="30" id="P0T-hR-hjX"/>
+                            <constraint firstItem="ceo-lN-eYc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="Swy-Ui-gIa"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ceo-lN-eYc" secondAttribute="trailing" constant="30" id="hJq-Tv-UrI"/>
+                            <constraint firstItem="YDi-3o-f6J" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="iBY-Ie-kVH"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="A3R-Tc-Ck1"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="962" y="686"/>
+        </scene>
+        <!--Sampler-->
+        <scene sceneID="Erd-DY-Za0">
+            <objects>
+                <viewController title="Sampler" id="Ueh-7E-30R" customClass="SamplerViewController" customModule="Testing_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ti6-KF-q4C">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xim-wt-Z50">
+                                <rect key="frame" x="30" y="128" width="354" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="hv0-tZ-Qgj"/>
+                                </constraints>
+                                <state key="normal" title="Init Sampler"/>
+                                <connections>
+                                    <action selector="action_InitSampler:" destination="Ueh-7E-30R" eventType="touchUpInside" id="XDc-nP-6nt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oVg-vi-AYG">
+                                <rect key="frame" x="30" y="208" width="354" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="A6U-CZ-GKl"/>
+                                </constraints>
+                                <state key="normal" title="Note Test"/>
+                                <connections>
+                                    <action selector="action_OffMidiSignal:" destination="Ueh-7E-30R" eventType="touchUpInside" id="Pea-v2-inh"/>
+                                    <action selector="action_OnMidiSignal:" destination="Ueh-7E-30R" eventType="touchDown" id="mSL-t1-DeD"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="oVg-vi-AYG" firstAttribute="top" secondItem="Xim-wt-Z50" secondAttribute="bottom" constant="40" id="Qlm-zX-cnr"/>
+                            <constraint firstItem="oVg-vi-AYG" firstAttribute="leading" secondItem="YxN-gt-THa" secondAttribute="leading" constant="30" id="WkU-e6-hCo"/>
+                            <constraint firstItem="YxN-gt-THa" firstAttribute="trailing" secondItem="oVg-vi-AYG" secondAttribute="trailing" constant="30" id="XZL-i8-te2"/>
+                            <constraint firstItem="Xim-wt-Z50" firstAttribute="top" secondItem="YxN-gt-THa" secondAttribute="top" constant="40" id="YYb-5V-qGj"/>
+                            <constraint firstItem="Xim-wt-Z50" firstAttribute="leading" secondItem="YxN-gt-THa" secondAttribute="leading" constant="30" id="drC-nM-sI3"/>
+                            <constraint firstItem="YxN-gt-THa" firstAttribute="trailing" secondItem="Xim-wt-Z50" secondAttribute="trailing" constant="30" id="hBM-DZ-6FP"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="YxN-gt-THa"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aVV-30-YqV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1801" y="686"/>
+        </scene>
+        <!--Reverb-->
+        <scene sceneID="9PZ-XH-J82">
+            <objects>
+                <viewController title="Reverb" id="h1W-1u-jkI" customClass="ReverbViewController" customModule="Testing_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fwD-Pv-9lC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oM1-Y2-Xq4">
+                                <rect key="frame" x="30" y="128" width="354" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="8ma-qS-yD2"/>
+                                </constraints>
+                                <state key="normal" title="Init Reverb"/>
+                                <connections>
+                                    <action selector="action_InitAudioUnit:" destination="h1W-1u-jkI" eventType="touchUpInside" id="ECn-PR-C0G"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="oM1-Y2-Xq4" firstAttribute="leading" secondItem="EwD-HW-Htz" secondAttribute="leading" constant="30" id="2IP-3u-Jkm"/>
+                            <constraint firstItem="EwD-HW-Htz" firstAttribute="trailing" secondItem="oM1-Y2-Xq4" secondAttribute="trailing" constant="30" id="So0-uO-nJH"/>
+                            <constraint firstItem="oM1-Y2-Xq4" firstAttribute="top" secondItem="EwD-HW-Htz" secondAttribute="top" constant="40" id="epa-k0-o7n"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="EwD-HW-Htz"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jCf-39-JuC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1800" y="1378"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="xcx-XQ-MRH">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="bbE-yG-kmH" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="48v-cv-Soj">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="HAn-t4-sHa"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sGM-oj-wVV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="166.66666666666669" y="686.38392857142856"/>
+        </scene>
+    </scenes>
+</document>
