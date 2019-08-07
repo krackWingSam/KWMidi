@@ -7,13 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		890BB55322F951B700FCC7CF /* FRMicUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890BB55222F951B700FCC7CF /* FRMicUnit.swift */; };
+		890BB55522FA4AC300FCC7CF /* AUTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890BB55422FA4AC300FCC7CF /* AUTestViewController.swift */; };
+		890BB55722FAB3D600FCC7CF /* FRAUPresetLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890BB55622FAB3D600FCC7CF /* FRAUPresetLoader.swift */; };
 		8971342A22F7C2FD004DE49F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8971342922F7C2FD004DE49F /* AppDelegate.swift */; };
 		8971342C22F7C2FD004DE49F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8971342B22F7C2FD004DE49F /* ViewController.swift */; };
 		8971342F22F7C2FD004DE49F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8971342D22F7C2FD004DE49F /* Main.storyboard */; };
 		8971343122F7C2FF004DE49F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8971343022F7C2FF004DE49F /* Assets.xcassets */; };
 		8971343422F7C2FF004DE49F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8971343222F7C2FF004DE49F /* LaunchScreen.storyboard */; };
 		8971344022F7C32E004DE49F /* FRAudioUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8971343C22F7C32E004DE49F /* FRAudioUnit.swift */; };
-		8971344222F7C32E004DE49F /* FRIOUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8971343E22F7C32E004DE49F /* FRIOUnit.swift */; };
+		8971344222F7C32E004DE49F /* FROutputUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8971343E22F7C32E004DE49F /* FROutputUnit.swift */; };
 		8971344322F7C32E004DE49F /* FRSamplerUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8971343F22F7C32E004DE49F /* FRSamplerUnit.swift */; };
 		897134C422F7C3F1004DE49F /* 2a#.caf in Resources */ = {isa = PBXBuildFile; fileRef = 8971349922F7C3F1004DE49F /* 2a#.caf */; };
 		897134C522F7C3F1004DE49F /* KDPiano.aupreset in Resources */ = {isa = PBXBuildFile; fileRef = 8971349A22F7C3F1004DE49F /* KDPiano.aupreset */; };
@@ -61,6 +64,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		890BB55222F951B700FCC7CF /* FRMicUnit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FRMicUnit.swift; sourceTree = "<group>"; };
+		890BB55422FA4AC300FCC7CF /* AUTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AUTestViewController.swift; sourceTree = "<group>"; };
+		890BB55622FAB3D600FCC7CF /* FRAUPresetLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FRAUPresetLoader.swift; sourceTree = "<group>"; };
 		8971342622F7C2FD004DE49F /* Testing_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Testing_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8971342922F7C2FD004DE49F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8971342B22F7C2FD004DE49F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -69,7 +75,7 @@
 		8971343322F7C2FF004DE49F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8971343522F7C2FF004DE49F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8971343C22F7C32E004DE49F /* FRAudioUnit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FRAudioUnit.swift; sourceTree = "<group>"; };
-		8971343E22F7C32E004DE49F /* FRIOUnit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FRIOUnit.swift; sourceTree = "<group>"; };
+		8971343E22F7C32E004DE49F /* FROutputUnit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FROutputUnit.swift; sourceTree = "<group>"; };
 		8971343F22F7C32E004DE49F /* FRSamplerUnit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FRSamplerUnit.swift; sourceTree = "<group>"; };
 		8971349922F7C3F1004DE49F /* 2a#.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "2a#.caf"; sourceTree = "<group>"; };
 		8971349A22F7C3F1004DE49F /* KDPiano.aupreset */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = KDPiano.aupreset; sourceTree = "<group>"; };
@@ -162,11 +168,13 @@
 			isa = PBXGroup;
 			children = (
 				8971343C22F7C32E004DE49F /* FRAudioUnit.swift */,
-				8971343E22F7C32E004DE49F /* FRIOUnit.swift */,
+				8971343E22F7C32E004DE49F /* FROutputUnit.swift */,
 				8971343F22F7C32E004DE49F /* FRSamplerUnit.swift */,
 				897134EA22F7E946004DE49F /* FRMixerUnit.swift */,
 				897134F122F7F6B9004DE49F /* FRReverbUnit.swift */,
 				897134F322F8083D004DE49F /* FRConverterUnit.swift */,
+				890BB55222F951B700FCC7CF /* FRMicUnit.swift */,
+				890BB55622FAB3D600FCC7CF /* FRAUPresetLoader.swift */,
 			);
 			path = lib;
 			sourceTree = "<group>";
@@ -270,6 +278,7 @@
 				8971342B22F7C2FD004DE49F /* ViewController.swift */,
 				897134ED22F7EC71004DE49F /* SamplerViewController.swift */,
 				897134EF22F7F624004DE49F /* ReverbViewController.swift */,
+				890BB55422FA4AC300FCC7CF /* AUTestViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -385,12 +394,15 @@
 			files = (
 				897134F222F7F6B9004DE49F /* FRReverbUnit.swift in Sources */,
 				897134EB22F7E946004DE49F /* FRMixerUnit.swift in Sources */,
+				890BB55522FA4AC300FCC7CF /* AUTestViewController.swift in Sources */,
 				897134EE22F7EC71004DE49F /* SamplerViewController.swift in Sources */,
+				890BB55322F951B700FCC7CF /* FRMicUnit.swift in Sources */,
+				890BB55722FAB3D600FCC7CF /* FRAUPresetLoader.swift in Sources */,
 				8971344322F7C32E004DE49F /* FRSamplerUnit.swift in Sources */,
 				8971342C22F7C2FD004DE49F /* ViewController.swift in Sources */,
 				8971344022F7C32E004DE49F /* FRAudioUnit.swift in Sources */,
 				897134F022F7F624004DE49F /* ReverbViewController.swift in Sources */,
-				8971344222F7C32E004DE49F /* FRIOUnit.swift in Sources */,
+				8971344222F7C32E004DE49F /* FROutputUnit.swift in Sources */,
 				897134F422F8083D004DE49F /* FRConverterUnit.swift in Sources */,
 				8971342A22F7C2FD004DE49F /* AppDelegate.swift in Sources */,
 			);

@@ -26,7 +26,9 @@ class FRMixerUnit: FRAudioUnit {
             return
         }
         
-        setMixerVolume(0, channel: 0)
+        for i in 0..<busCount {
+            setMixerVolume(0, channel: i)
+        }
     }
     
     

@@ -9,7 +9,14 @@
 import UIKit
 
 class SamplerViewController: UIViewController {
-    var ioUnit          : FRIOUnit?
+    
+    @IBOutlet weak var slider_Note: UISlider!
+    @IBOutlet weak var slider_Velocity: UISlider!
+    @IBOutlet weak var label_Note: UILabel!
+    @IBOutlet weak var label_Velocity: UILabel!
+    
+    
+    var ioUnit          : FROutputUnit?
     var mixerUnit       : FRMixerUnit?
     var samplerUnit     : FRSamplerUnit?
     
@@ -23,7 +30,7 @@ class SamplerViewController: UIViewController {
     
     
     func initSamplerUnits() {
-        ioUnit = FRIOUnit.init()
+        ioUnit = FROutputUnit.init()
         
         samplerUnit = FRSamplerUnit.init("KDPiano")
         
@@ -48,18 +55,26 @@ class SamplerViewController: UIViewController {
     }
     
     
-    //MARK: -
+    //MARK: - IBActions
     @IBAction func action_InitSampler(_ sender: Any) {
         initSamplerUnits()
     }
     
     @IBAction func action_OnMidiSignal(_ sender: Any) {
         guard let sampler = samplerUnit else { return }
-        sampler.onMidiSignal(72, velocity: 90)
+        sampler.onMidiSignal(UInt32(slider_Note.value), velocity: UInt32(slider_Velocity.value))
     }
     
     @IBAction func action_OffMidiSignal(_ sender: Any) {
         guard let sampler = samplerUnit else { return }
-        sampler.offMidiSignal(72, velocity: 90)
+        sampler.offMidiSignal(UInt32(slider_Note.value), velocity: UInt32(slider_Velocity.value))
+    }
+    
+    @IBAction func action_VelocityValueChange(_ sender: UISlider) {
+        label_Velocity.text = String(format: "%2.f", sender.value)
+    }
+    
+    @IBAction func action_NoteValueChange(_ sender: UISlider) {
+        label_Note.text = String(format: "%2.f", sender.value)
     }
 }

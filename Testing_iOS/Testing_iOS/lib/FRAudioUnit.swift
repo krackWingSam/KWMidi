@@ -13,6 +13,7 @@ import AudioToolbox
 
 enum FRAudioUnitType: Int {
     case IO
+    case Mic
     case Mixer
     case Sampler
     case Reverb
@@ -63,6 +64,10 @@ class FRAudioUnit: NSObject {
             componentType       = kAudioUnitType_Output
             componentSubType    = kAudioUnitSubType_RemoteIO
             
+        case .Mic:
+            componentType       = kAudioUnitType_Output
+            componentSubType    = kAudioUnitSubType_RemoteIO
+            
         case .Mixer:
             componentType       = kAudioUnitType_Mixer
             componentSubType    = kAudioUnitSubType_MultiChannelMixer
@@ -104,7 +109,7 @@ class FRAudioUnit: NSObject {
         var size = UInt32(MemoryLayout.size(ofValue: desc))
         err = AudioUnitGetProperty(self.audioUnit!, kAudioUnitProperty_StreamFormat, kAudioUnitScope_Input, 0, &desc, &size)
         if err != noErr {
-            printError("get audio component description in io unit", err)
+            printError("get input audio component description in io unit", err)
         }
         
         return desc
@@ -116,7 +121,7 @@ class FRAudioUnit: NSObject {
         var size = UInt32(MemoryLayout.size(ofValue: desc))
         err = AudioUnitGetProperty(self.audioUnit!, kAudioUnitProperty_StreamFormat, kAudioUnitScope_Output, 0, &desc, &size)
         if err != noErr {
-            printError("get audio component description in io unit", err)
+            printError("get output audio component description in io unit", err)
         }
         
         return desc
@@ -138,12 +143,6 @@ class FRAudioUnit: NSObject {
         if err != noErr {
             printError("connect Audio Unit", err)
         }
-        
-        print("##########")
-        print(self)
-        print(getInputDesc())
-        print(getOutputDesc())
-        print("##########")
     }
     
     public func initializeAudioUnit() {
@@ -155,6 +154,12 @@ class FRAudioUnit: NSObject {
         if err != noErr {
             printError("initialize audio unit", err)
         }
+        
+        print("##########")
+        print(self)
+        print(getInputDesc())
+        print(getOutputDesc())
+        print("##########")
     }
     
     public func unInitializeAudioUnit() {

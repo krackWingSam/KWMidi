@@ -11,7 +11,7 @@ import AudioToolbox
 
 class FRSamplerUnit: FRAudioUnit {
     
-    private let KEY_FILE_REFERENCE = "file-references"
+    fileprivate let KEY_FILE_REFERENCE = "file-references"
     
     init(_ presetName: String) {
         super.init(.Sampler)
